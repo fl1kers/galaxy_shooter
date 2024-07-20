@@ -18,7 +18,7 @@ class GameSprite(pygame.sprite.Sprite):
     def draw(self):
         window.blit(self.image, (self.rect.x, self.rect.y))
 player = GameSprite('rocket.png', 20, 408, 4,50,90)
-enemies=[GameSprite('ufo.png', randint(0,620), -50, randint(2), 80, 50) for i in range(5)]
+enemies=[GameSprite('ufo.png', randint(0,620), -50, randint(2), 80, 50) for i in range(5)] #error
 pygame.mixer.init()
 pygame.mixer.music.load('baby.mp3')
 pygame.mixer.music.play()
